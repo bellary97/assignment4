@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table
+        {
+            background-color: #f3d3ab;
+        }
+    </style>
+</head>
+<body>
+    <table  style="margin: auto;" border cellspacing="20px" cellpadding="20px" rules="all">
+        <h1 style="text-align: center;">vote your language</h1>
+        <tr>
+            <td id="php" style="border-right: hidden;">1</td>
+            <td style="border-right: hidden;">PHP</td>
+            <td><a href=""onclick="return onphp()" >click here</a></td>
+        </tr>
+        <tr style="border-top:5px solid white">
+            <td id="php1" style="border-right: hidden;">1</td>
+            <td style="border-right: hidden;">PYTHON</td>
+            <td><a href=""onclick="return onphp1()" >click here</a></td>
+        </tr>
+        <tr style="border-top:5px solid white">
+            <td id="php2" style="border-right: hidden;">1</td>
+            <td style="border-right: hidden;">GO</td>
+            <td><a href=""onclick="return onphp2()" >click here</a></td>
+        </tr>
+        <tr style="border-top:5px solid white">
+            <td id="php3" style="border-right: hidden;">1</td>
+            <td style="border-right: hidden;">JAVA</td>
+            <td><a href=""onclick="return onphp3()" >click here</a></td>
+        </tr>
+
+    </table>
+
+    <script>
+
+        function onphp()
+        {
+            let php=document.getElementById("php")
+            let value=php.innerHTML;
+            ++value;
+            document.getElementById("php").innerHTML=value;
+            return false
+        }
+        function onphp1()
+        {
+            let php=document.getElementById("php1")
+            let value=php.innerHTML;
+            ++value;
+            document.getElementById("php1").innerHTML=value;
+            return false
+        }
+        function onphp2()
+        {
+            let php=document.getElementById("php2")
+            let value=php.innerHTML;
+            ++value;
+            document.getElementById("php2").innerHTML=value;
+            return false
+        }
+        function onphp3()
+        {
+            let php=document.getElementById("php3")
+            let value=php.innerHTML;
+            ++value;
+            document.getElementById("php3").innerHTML=value;
+            return false
+        }
+    </script>
+</body>
+</html>
